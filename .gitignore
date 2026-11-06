@@ -1,0 +1,24 @@
+# Private user data: never committed
+users/*
+!users/README.md
+
+# CVs, claim sheets, exports, evidence
+*.pdf
+*.validation.json
+*claim-sheet*.json
+export-*/
+
+# Secrets and local environment (there should be none, but never by accident)
+.env
+.env.*
+*.key
+*.pem
+*.token
+
+# Scratch
+tmp/
+.tmp/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
